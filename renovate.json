@@ -1,1 +1,19 @@
-{}
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchDepNames": ["@types/vscode"],
+      "rangeStrategy": "bump"
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "jsonata",
+      "fileFormat": "json",
+      "fileMatch": ["^package.json$"],
+      "depNameTemplate": "@types/vscode",
+      "matchStrings": ["engines.{ \"currentValue\": vscode}"],
+      "datasourceTemplate": "npm"
+    }
+  ]
+}

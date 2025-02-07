@@ -1,0 +1,9 @@
+{
+  "name": "renovate-reproduction-34076",
+  "engines": {
+    "vscode": "^1.66.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "1.97.0"
+  }
+}
