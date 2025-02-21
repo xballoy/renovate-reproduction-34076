@@ -9,11 +9,10 @@
   ],
   "customManagers": [
     {
-      "customType": "jsonata",
-      "fileFormat": "json",
+      "customType": "regex",
       "fileMatch": ["^package.json$"],
       "depNameTemplate": "@types/vscode",
-      "matchStrings": ["engines.{ \"currentValue\": vscode}"],
+      "matchStrings": ["\"vscode\": \"(?<currentValue>.*?)\""],
       "datasourceTemplate": "npm"
     }
   ]
